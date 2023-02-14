@@ -1,0 +1,74 @@
+html {
+    font-size: 100%;
+    background-color: #00bff3;
+}
+/*body edit*/
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    Border: 1px solid black;
+    Margin: 0;
+    Padding: 0px;
+}
+/*header edit*/
+header {
+    background-color: #292929;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    height: 100px 
+}
+/*change logo size:
+header img {
+    height: 50%;
+}*/
+
+/*nav edit*/
+nav ul {
+    list-style-type: none;
+}
+/*using only "li {}" would apply to all style blocks*/
+nav ul li {
+    background-color: #292929;
+    color: white;
+    border: 1px solid #292929
+}
+
+nav ul li a {
+    background-color: #292929;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #292929;
+    text-decoration:underline; 
+    font-weight: bold;
+}
+/*hover even/odd:
+nav ul li:nth-child(2) {
+    background-color: pink
+    color: black
+    Border: 1px solid pink
+    font-weight: bold
+    text-decoration: none
+Then you would copy this, and do the same things for "nav ul li a"*/
+
+.wrapper {
+    background-color: #00bff3;
+}
+
+footer {
+    background-color: #8bc34a;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    
+    
+/* To fill Text-webkit-text-stroke: 1px #292929;
+-webkit-text-fill-color: white;*/
+}
+
