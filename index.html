@@ -15,33 +15,37 @@
   <body>
 
     <!-- new section for <header>, which contains <h1>, <a>, and <img> elements -->
-    <header>
-      <a href="index.html">
-        <img src="images/ExtraSmallCartoonJasmin.png" alt="Jasmin Keith Portfolio Logo">
-      </a>
-       <h1 id="title">Jasmin Keith</h1>
+      <header>
+        <h1 id="title">Jasmin Keith</h1>
+        <a href="index.html">
+        <img src="images/LogoCartoonJasmin.svg" alt="Jasmin Keith Portfolio Logo">
+        </a>
     </header>
-
-    <!-- new section for <nav>, which contains <ul> and <li> elements -->
     <nav>
+      <a href="About.html">About</a>
+      <a href="Work.html">Work</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+    <!-- new section for <nav>, which contains <ul> and <li> elements -->
+    <!--<nav>
       <ul>
         <li><a href="About.html">About</a></li>
         <li><a href="Work.html">Work</a></li>
         <li><a href="Contact.html">Contact</a></li>
       </ul>
-    </nav>
+    </nav>-->
 
     <!-- the <div> wraps around all elements below except for the <footer> element -->
     <div class="wrapper">
 
       <!-- this is the first of two <section> elements on this page -->
-      <!--<section id="primary">-->
+      <section id="primary">
 
         <!-- this is the first of two <article> elements on this page. Each
         <article> element is in its own <section>. In practice, this might be
         redundant; that is, you can either use an <article> or a <section>
         element and may not need both. -->
-        <!--<article id="main_article">-->
+        <article id="main_article">
 
         <!-- it's good practice to include a <h2> for each <section> or <article> -->
 
@@ -54,6 +58,7 @@
           alt="Image of Jasmin Keith Portfolio Logo Waving"
           title="Jasmin Keith Portfolio Logo Waving">
         </figure>
+      </section>
 
       <!--</section>-->
 
@@ -61,11 +66,11 @@
 
         <!--<article id="sub_article">-->
 
-        <!--</article>-->
+        </article>
 
       <!--</section>-->
 
-    </div> <!-- wrapper -->
+        </div class="wrapper">
 
        
     <!-- the <footer> can contain more than an address, but this
