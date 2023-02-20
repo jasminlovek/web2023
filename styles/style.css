@@ -52,6 +52,7 @@ nav ul {
     font-size: 1.5rem;
     grid-row: 1;
     grid-column: 3;
+    height: 50px
 }
 nav ul li {
     display: inline;
