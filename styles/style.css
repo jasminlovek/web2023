@@ -18,7 +18,7 @@ header {
     height: 100px; 
     display: grid;
     grid-template-rows: 100px 1px;
-    grid-template-columns: 200px 500px 1150px ;
+    grid-template-columns: 200px 300px 1100px;
 }
 /*change logo size:*/
 header a {
@@ -39,25 +39,27 @@ header h1 {
 }
 /*nav edit*/
 nav ul {
-    /*list-style-type: none;*/
+    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
     gap: 4rem;
     background-color: #292929;
     color: white;
-    border: 10px solid #292929;
+    /*border: 10px solid #292929;*/
     word-spacing: 40px;
-    padding-top: 5px;
+    padding-top: 10px;
     font-size: 1.5rem;
     grid-row: 1;
-    grid-column: 3;
-    height: 50px
+    grid-column: 4;
+    
+    
 }
 nav ul li {
     display: inline;
     float: right;
     grid-row: 1;
+    grid-column: 4;
   }
 /*using only "li {}" would apply to all style blocks*/
 /*nav ul li {
@@ -147,7 +149,7 @@ footer {
     text-transform: uppercase;
     display: grid;
     grid-template-rows: 100px 40px;
-    grid-template-columns: 200px 500px 1150px;
+    grid-template-columns: 200px 300px 1100px;
     border-bottom: 20px solid #784421ff;
     
 } 
