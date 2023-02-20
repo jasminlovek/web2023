@@ -6,7 +6,7 @@ html {
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     Border: 0px solid black;
-    Margin: 0;
+    Margin: 0px;
     Padding: 0px;
 }
 /*header edit*/
@@ -15,26 +15,49 @@ header {
     color: white;
     font-size: 1rem;
     text-transform: uppercase;
-    height: 130px 
+    height: 100px; 
+    display: grid;
+    grid-template-rows: 100px 1px;
+    grid-template-columns: 200px 500px 1150px ;
 }
 /*change logo size:*/
+header a {
+    height: 100px;
+    text-align: left;
+    grid-column: 1;
+    grid-row: 1;
+}
 header img {
+    padding-top: 8px;
     height: 100%;
+    grid-column: 1;
 }
 header h1 {
-    text-align: center
+    justify-content: left;
+    grid-column: 2;  
+    padding-top: 8px;  
 }
 /*nav edit*/
-nav {
+nav ul {
     /*list-style-type: none;*/
-    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 4rem;
     background-color: #292929;
     color: white;
     border: 10px solid #292929;
     word-spacing: 40px;
-    padding: 0px;
+    padding-top: 5px;
     font-size: 1.5rem;
+    grid-row: 1;
+    grid-column: 3;
 }
+nav ul li {
+    display: inline;
+    float: right;
+    grid-row: 1;
+  }
 /*using only "li {}" would apply to all style blocks*/
 /*nav ul li {
     background-color: #292929;
@@ -48,6 +71,7 @@ nav a {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
+    
 }
 
 nav a:hover {
@@ -67,17 +91,73 @@ Then you would copy this, and do the same things for "nav ul li a"*/
 /*.wrapper {
     background-color: #00bff3;
 }*/
+article {
+    display: grid;
+    max-width: 500px;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+.parent {
+    position:relative;
+    top: 0;
+    left: 0;
+}
+.image1  {
+   /*border: 1px solid gray;
+   border-radius: 25px;*/
+   padding: 1rem;
+   padding-top: 110px;
+   padding-bottom: 100px;
+   position: relative;
+   z-index: 2;
+
+}
+.image2 {
+    position: absolute;
+    top: 120px;
+    left: 573px;
+    height: 35%;
+    z-index: 1;
+}
+.image3 {
+    position: absolute;
+    top: 60px;
+    right: 690px;
+    height: 30%;
+    z-index: 1;
+}
+.image4 {
+    position: absolute;
+    top: 752px;
+    right: 1170px;
+    height: 13%;
+    z-index: 2;
+}
+
 
 footer {
+    height: 100%;
     background-color: #8bc34a;
     color: #292929;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
     font-size: 1.2rem;
     text-transform: uppercase;
+    display: grid;
+    grid-template-rows: 100px 40px;
+    grid-template-columns: 200px 500px 1150px;
+    border-bottom: 20px solid #784421ff;
+    
+} 
+footer address {
+    text-align: end;
+    grid-row: 1;
+   grid-column: 3;
+}   
     
     
 /* To fill Text-webkit-text-stroke: 1px #292929;
 -webkit-text-fill-color: white;*/
-}
+
 

@@ -16,16 +16,19 @@
 
     <!-- new section for <header>, which contains <h1>, <a>, and <img> elements -->
       <header>
-        <h1 id="title">Jasmin Keith</h1>
         <a href="index.html">
-        <img src="images/LogoCartoonJasmin.svg" alt="Jasmin Keith Portfolio Logo">
+        <img src="images/LogoCartoonJasmin.svg" width= "250" height= "150" alt="Jasmin Keith Portfolio Logo">
         </a>
+        <h1 id="title">Jasmin Keith</h1>
+        <nav> 
+          <ul>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Work.html">Work</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
     </header>
-    <nav>
-      <a href="About.html">About</a>
-      <a href="Work.html">Work</a>
-      <a href="Contact.html">Contact</a>
-    </nav>
+    
     <!-- new section for <nav>, which contains <ul> and <li> elements -->
     <!--<nav>
       <ul>
@@ -51,14 +54,30 @@
 
 
         <!--</article>-->
-
-        <!-- be sure to use alt and title for images -->
+      <article>
+        <div class="parent">
         <figure id="main_fig">
-           <img src="images/WavingJasminCartoon.png"
+           <img class= "image1" src="images/WavingJasminCartoon.png" width="695" height="579"
           alt="Image of Jasmin Keith Portfolio Logo Waving"
           title="Jasmin Keith Portfolio Logo Waving">
         </figure>
-     
+        <figure id="secondary_fig">
+          <img class="image2" src="images/CartoonCloud.svg"
+        alt="Image of cartoon cloud"
+        title="Cartoon Cloud">
+        </figure>
+        <figure id="tertiary_fig">
+          <img class="image3" src="images/CartoonCloud.svg"
+        alt="Image of cartoon cloud"
+        title="Cartoon Cloud">
+        </figure>
+        <figure id="quarternary_fig">
+          <img class="image4" src="images/cartoonflower.svg"
+        alt="Image of cartoon flower"
+        title="Cartoon Flower">
+        </figure>
+      </div>
+      </article>
 
       <!--</section>-->
 
@@ -86,8 +105,7 @@
       </address>
 
     </footer>
-   <!-- I feel like my page is really simple, compared to all of the content on the original example
-        But I want my portfolio to be something simple and nice to look at-->
+
    <!-- be sure to close the </body> and the </html> elements at the end -->
   </body>
 </html>
