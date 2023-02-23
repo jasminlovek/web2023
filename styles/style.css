@@ -17,7 +17,7 @@ header {
     text-transform: uppercase;
     height: 100px; 
     display: grid;
-     grid-template-columns: .2fr 1fr 2fr;
+     grid-template-columns: .35fr 1fr 2fr;
      grid-auto-rows: minmax(100px, auto);
 }
 header a {
@@ -28,7 +28,7 @@ header a {
 header img {
     padding-top: 8px;
     height: 100%;
-    
+    float: right;
 }
 header h1 {
     padding-top: 8px; 
@@ -60,12 +60,7 @@ nav ul li a {
     text-decoration: none;
     display: inline;
     padding: 50px;
-    text-align: center;
-    
-    
-    
-    
-    
+    text-align: center;   
 }
 
 nav a:hover {
@@ -82,10 +77,6 @@ nav ul li:nth-child(2) {
     font-weight: bold
     text-decoration: none
 Then you would copy this, and do the same things for "nav ul li a"*/
-
-/*.wrapper {
-    background-color: #00bff3;
-}*/
 article {
     display: grid;
     max-width: 500px;
