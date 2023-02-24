@@ -52,7 +52,7 @@ header h1 {
           
         }
         header img {
-            float: center;
+            
             grid-row: 1;
             grid-column: 1;
             
@@ -124,7 +124,6 @@ body {
 article {
     display: grid;
     max-width: 500px;
-    max-height: auto;
     justify-content: center;
     margin: 0 auto;
     gap: 10px;
@@ -193,7 +192,7 @@ article {
         
       
     }
-
+}
 footer {
     background-color: #8bc34a;
     color: #292929;
