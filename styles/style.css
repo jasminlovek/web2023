@@ -38,17 +38,33 @@ header h1 {
       grid-template-columns:1fr;
       padding: 1em;
       grid-row-gap: 100px;
+      text-align: center;
+      grid-row: 1;
+      grid-column: 2;
+      
     }
     }
     @media only screen and (max-width: 768px) {
         header {
           display: grid;
-          grid-template-columns: auto;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr auto;
+          
         }
         header img {
-            float: left;
+            float: center;
+            grid-row: 1;
+            grid-column: 1;
+            
         }
-  }
+        header h1 {
+            grid-row: 1;
+            grid-column: 1;
+            text-align: center;
+            padding-left: 30px;
+            
+        }
+    }
     nav ul {
         list-style-type: none;
         background-color: #292929;
@@ -120,6 +136,7 @@ article {
       width: 30%;
       position: absolute;
       left: 900px;
+      display: none;
     }
 }
 
@@ -171,16 +188,11 @@ article {
 /*edit footer*/
 @media only screen and (max-width: 768px) {
     footer {
-      position:fixed;
-      bottom: 0;
+        bottom: 0;
+        width: 100%;
+        
       
     }
-}
-@media only screen and (max-width: 768px) {
-    footer address{
-      width: ;
-    }
-}
 
 footer {
     background-color: #8bc34a;
