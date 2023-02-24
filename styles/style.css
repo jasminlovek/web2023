@@ -2,26 +2,20 @@ html {
     font-size: 100%;
     background-color: #00bff3;
 }
-/*body edit*/
-body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    Border: 0px solid black;
-    Margin: 0px;
-    Padding: 0px;
-}
+
 /*header edit*/
 header {
     background-color: #292929;
     color: white;
     font-size: 1rem;
     text-transform: uppercase;
-    height: 100px; 
+    height: 100%; 
     display: grid;
      grid-template-columns: .35fr 1fr 2fr;
      grid-auto-rows: minmax(100px, auto);
 }
 header a {
-    height: 100px;
+    height: 100%;
     grid-column: 1; 
     grid-row: 1; 
 }
@@ -36,13 +30,31 @@ header h1 {
     grid-row: 1; 
     text-align: left;
 }
+
 /*nav edit*/
+@media only screen and (max-width: 768px) {
+    nav ul {
+      display: grid;
+      grid-template-columns:1fr;
+      padding: 1em;
+      grid-row-gap: 100px;
+    }
+    }
+    @media only screen and (max-width: 768px) {
+        header {
+          display: grid;
+          grid-template-columns: auto;
+        }
+        header img {
+            float: left;
+        }
+  }
     nav ul {
         list-style-type: none;
         background-color: #292929;
         color: white;
         font-size: 1.5rem; 
-        margin-right: 20px;
+        padding-right: 20px;
         padding-top: 10px;
         overflow: hidden; 
         
@@ -77,13 +89,40 @@ nav ul li:nth-child(2) {
     font-weight: bold
     text-decoration: none
 Then you would copy this, and do the same things for "nav ul li a"*/
+
+/*body edit*/
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    Border: 0px solid black;
+    Margin: 0px;
+    Padding: 0px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+
+    
+    
+}
+
 article {
     display: grid;
     max-width: 500px;
+    max-height: auto;
     justify-content: center;
     margin: 0 auto;
     gap: 10px;
 }
+
+/*edit images*/
+@media only screen and (max-width: 768px) {
+    .image2{
+      width: 30%;
+      position: absolute;
+      left: 900px;
+    }
+}
+
 .parent {
     position:relative;
     top: 0;
@@ -97,46 +136,72 @@ article {
    padding-bottom: 100px;
    position: relative;
    z-index: 2;
+   max-width: 100%;
+    height: auto;
 
 }
 .image2 {
     position: absolute;
     top: 120px;
-    left: 573px;
-    height: 35%;
+    left: 360px;
     z-index: 1;
+    max-width: 100%;
+    height: auto;
+   
 }
 .image3 {
     position: absolute;
     top: 60px;
-    right: 690px;
-    height: 30%;
+    right: 500px;
     z-index: 1;
+    max-width: 100%;
+    height: auto;
+   
 }
 .image4 {
     position: absolute;
-    top: 752px;
-    right: 970px;
-    height: 13%;
+    top: 560px;
+    right: 895px;
     z-index: 2;
+    max-width: 100%;
+    height: auto;
+    
 }
 
+/*edit footer*/
+@media only screen and (max-width: 768px) {
+    footer {
+      position:fixed;
+      bottom: 0;
+      
+    }
+}
+@media only screen and (max-width: 768px) {
+    footer address{
+      width: ;
+    }
+}
 
 footer {
-    height: 100%;
     background-color: #8bc34a;
     color: #292929;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
     font-size: 1.2rem;
     text-transform: uppercase;
-    border-bottom: 20px solid #784421ff;
+    border-bottom: 3vh solid #784421ff;
+        width: 100%;
+        margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+     grid-auto-rows: minmax(100px, auto);
+     
     
 } 
 footer address {
     text-align: end;
-    padding-right: 40px;
-    margin-bottom: 10px;
+    padding-right: 3vw;
+    margin-bottom: 1vh;
 }   
     
     
