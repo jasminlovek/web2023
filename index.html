@@ -17,13 +17,9 @@
     <!-- new section for <header>, which contains <h1>, <a>, and <img> elements -->
     
       <header>
-        <picture>
-          <source media="(max-width: 799px)" srcset="images/LogoCartoonJasmin.svg"/>
-          <source media="min-width: 800px)" srcset="images/LogoCartoonJasmin.svg"/>
         <a href="index.html">
           <img src="images/LogoCartoonJasmin.svg" width= "125" height= "100" alt="Jasmin Keith Portfolio Logo">
           </a>
-        </picture>
           <h1 id="title">Jasmin Keith</h1>
             <nav> 
               <ul>
@@ -45,7 +41,10 @@
       <article id="main_article">
         <div class="parent">
         <figure id="main_fig">
-           <img class= "image1" src="images/WavingJasminCartoon.png" width="795" height="679"
+           <img class= "image1" 
+           srcset="images/Wavingjasmincartoon-495w 495w, images/WavingJasminCartoon-795w.png 795w"
+           sizes="(max-width: 600px) 495px, 795px"
+           src="images/WavingJasminCartoon-795w.png"
           alt="Image of Jasmin Keith Portfolio Logo Waving"
           title="Jasmin Keith Portfolio Logo Waving">
         </figure>
