@@ -1,0 +1,15 @@
+html {
+    font-size: 100%;
+    background-color: #00bff3;
+}
+
+/*header edit*/
+header {
+    background-color: #292929;
+    color: white;
+    font-size: 1rem;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    Border: 0px solid black;
+}
