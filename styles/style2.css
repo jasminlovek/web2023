@@ -13,3 +13,49 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     Border: 0px solid black;
 }
+/* .bold {
+      font-weight: bold;
+    }
+
+    hr {
+      margin: 30px 0 30px 0;
+    }
+
+
+    a {
+      color: blue;
+    }
+
+    a:visited {
+      color: blue;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    .basicform label {
+      background-color: yellow;
+      color: blue;
+      font-weight: bold;
+      font-family: sans-serif;
+      }
+
+    .basicform input {
+      display: flex;
+      font-size: 100%;
+      width: 250px;
+      border: 2px solid blue;
+      background-color: pink;
+      color: black;
+      }
+
+      .basicbutton button {
+        border-radius: 5%;
+        box-shadow: 10px 5px 5px red;
+      }
+
+      textarea {
+        background-color: green;
+        color: black;
+      }*/
