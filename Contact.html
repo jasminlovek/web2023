@@ -5,39 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Page</title>
     <link rel="stylesheet" href="styles/style3.css">
-        <title>Jasmin Keith Contact Page</title>
+
 
         <style>
-            table {
-                            padding: 15px;
-                            border-radius: 25px;
-                            background-color: #f9bf3b;
-                  }
-                  
-            thead, tfoot {
-                            background-color: white;
-                            color: black;
-                            font-weight: bold;
-                        }
             
-                        th, td {
-                            padding: 5px 10px;
-                            background-color: white;
-                            
-                        }
-            
-                        .center {
-                            text-align: center;
-                            
-                        }
-                        .rowhover:hover {
-                            color: #f06292ff;
-                            
-                        }
              </style>
   </head>
   <body>
-
+    <header>
+        <a href="index.html">
+          <img src="images/LogoCartoonJasmin.svg" width= "125" height= "100" alt="Jasmin Keith Portfolio Logo">
+          </a>
+          <h1 id="title">Jasmin Keith</h1>
+            <nav> 
+              <ul>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Estimates.html">Estimates</a></li>
+                <li><a href="Work.html">Work</a></li>
+                
+              </ul>
+            </nav> 
+      </header>
+      <article id="form_article">
     <h1>Say Hello!</h1>
 <!-- <form action="#" method="post" class="basicform">
         <label for="name">Enter your name: </label>
@@ -57,23 +47,33 @@
                 <th>
                     <form action="#" method="post" class="basicform">
                         <label for="name"></label>
-                    <input type="text" placeholder="Name:" name="bio" id="name" required>
+                    <input type="text" placeholder="Name:" name="bio" id="name" class="name" required>
                     <br>
                     <br>
                     <label for="email"></label>
-                    <input type="text" placeholder="Email:" name="bio" id="email" required>
+                    <input type="text" placeholder="Email:" name="bio" id="email" class="email" required>
                     <br>
                     <br>
-                    <form action="#" method="post">
-                        <textarea name="ContactForm" id="Message" rows="5" cols="40" placeholder="Message:"></textarea>
+                    <textarea name="ContactForm" id="Message" class="message" rows="10" cols="40" placeholder="Message:" required></textarea>
                     <br>
                     <br>
-                    <form action="#" method="get" class="basicbutton">
-                        <button type="button" name="submitbutton">Submit</button>
+                        <input type="submit" value="Submit">
                       </form>
                 </th>
             </tr>
         </tbody>
     </table>
+</article>
+    <footer>
+
+        <address>
+          <p>123 Main St.<br>
+            Lexington, KY 40506<br>
+            555-555-4567<br>
+            Jasmin@gmail.com<br>
+            @JasminKeith</p>
+        </address>
+  
+      </footer>
 </body>
 </html>
