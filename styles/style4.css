@@ -202,6 +202,11 @@ article {
     justify-self: center;
     bottom: 390px;
 }
+@media only screen and (max-width: 768) {
+    .rectangle {
+        width: 100%
+    }
+}
 .rectangle4 {
   width: 1520px;
   height: 460px;
@@ -209,6 +214,7 @@ article {
   position: absolute;
   z-index: 1;
   margin-top: 760px ;
+  grid-column: 1 / 4 ;
 }
 /*edit images*/
 /*.image4 {
