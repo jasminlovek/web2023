@@ -44,11 +44,12 @@ header h1 {
           margin-left: 5px;        
       }
       header h1 {
-        visibility: hidden;
+        font-size: 1rem;
           grid-row: 1;
           grid-column: 2;
           text-align: left;
           margin-left: 5px;
+         margin-top: 35px;
           
       }
   }
