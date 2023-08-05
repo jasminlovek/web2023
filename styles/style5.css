@@ -31,40 +31,109 @@ header h1 {
   text-align: left;
 }
 
-/*nav edit*/
-@media only screen and (max-width: 768px) {
-  nav ul {
-    display: grid;
-    grid-template-columns:1fr;
-    padding: 1em;
-    grid-row-gap: 100px;
-    text-align: center;
-    grid-row: 1;
-    grid-column: 2;
-    
-  }
-  }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
       header {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:.5fr 1.5fr auto;
         grid-template-rows: 1fr auto;
         
       }
       header img {
-          
           grid-row: 1;
-          grid-column: 1;
-          
+          grid-column: 1;  
+          margin-left: 5px;        
       }
       header h1 {
           grid-row: 1;
-          grid-column: 1;
-          text-align: center;
-          padding-left: 30px;
+          grid-column: 2;
+          text-align: left;
+          margin-left: 5px;
           
       }
   }
+  /*nav edit*/
+/*@media only screen and (max-width: 1024px) {*/
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
+  }
+
+  #hamburger-input{
+    display: none;
+  }
+
+  #hamburger-menu {
+    right: 20px;
+    width: 50px;
+    height: 20px;
+    display: none;
+    /*border: none;*/
+    padding: 0px;
+    margin: 38px;
+    background: linear-gradient(
+      to bottom, 
+      white, white 20%, 
+      #292929 20%, #292929 40%, 
+      white 40%, white 60%, 
+      #292929 60%, #292929 80%, 
+      white 80%, white 100%
+    );
+  }
+  #hamburger-menu #burger-menu {
+    visibility: hidden;
+    position: absolute;
+    top: -150px;
+    right: 0px;
+    width: 300px;
+    height: 60%;
+    background-color: #292929;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    color: white;
+    overflow: hidden;
+  }
+  /*}*/
+  #hamburger-menu ul {
+    padding-left: 0px;
+  }
+  
+  #hamburger-menu li {
+    list-style-type: none;
+    line-height: 5.5rem;
+    top: 0px;
+  }
+  
+  #hamburger-input:checked + #hamburger-menu #burger-menu {
+    visibility: visible;
+    top: 60px;
+}
+
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 1024px) {
+  #main-menu {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
+  .overlay {
+    none;
+  }
+}
   nav ul {
       list-style-type: none;
       background-color: #292929;
@@ -72,9 +141,7 @@ header h1 {
       font-size: 1.5rem; 
       padding-right: 20px;
       padding-top: 10px;
-      overflow: hidden; 
-      
-      
+      overflow: hidden;   
   }
 nav li {
   float: right;
@@ -96,6 +163,8 @@ nav a:hover {
   text-decoration:underline; 
   font-weight: bold;
 }
+
+/*body edit*/
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     Border: 0px solid black;
@@ -103,6 +172,36 @@ body {
     Padding: 0px;
     min-height: 100vh;
 }
+
+/*article edit*/
+@media only screen and (max-width: 1024px) {
+  article {
+    display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: minmax(100px, auto);
+}
+article h1 {
+  grid-column: 2;
+  text-align: center;
+  grid-row: 1;
+}
+article p {
+  max-width: 600px;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: center;
+  text-align: center;
+}
+table {
+  grid-column: 2;
+  grid-row: 3;
+}
+table img{
+ width: 100%;
+ height: auto;
+}
+}
+
 article {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -177,7 +276,7 @@ th, td {
 }
 
 /*edit footer*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   footer {
       bottom: 0;
       width: 100%;
